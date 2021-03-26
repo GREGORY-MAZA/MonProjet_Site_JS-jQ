@@ -1,11 +1,35 @@
 body {
-    background-color: lightblue;
-}
-header {
     background-color: black;
-    color: white;
-    
+    color: whitesmoke;
+    margin: auto;
 }
+
+header {
+    background-color: rgb(231, 197, 2);
+    color: black;
+}
+
 nav a {
     color: white;
+    text-align: center;
+    display: flex;
+}
+
+img {
+    width: 300px;
+    height: auto;
+}
+
+p {
+    background-color: rgb(231, 197, 2);
+    font-size: x-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-left: 50px;
+}
+
+h1 {
+    text-align: right;
+    padding-right: 50px;
+    font-size: 5em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }

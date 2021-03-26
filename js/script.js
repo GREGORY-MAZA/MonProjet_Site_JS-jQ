@@ -13,9 +13,21 @@ $(document).ready(function() {
         /*On peut par exemple convertir cette réponse en chaine JSON et insérer
          * cette chaine dans un div id="res"*/
         .done(function(response) {
-            let data = JSON.stringify(response);
-            $("div#API").append(data);
-            console.log(data);
+            /*let data = JSON.stringify(response[1]);
+            /*$("div#API").append(data);*/
+            /*console.log(data);*/
+            console.log(response[0]);
+            const content = document.createElement('div');
+            response.forEach(element => {
+
+                //SELECTEUR des éléments
+                $("<article>\
+                        <p>" + element.nickname + "</p>\
+                        <p>" + element.name + "</p>\
+                        <img src='" + element.img + "'>\
+                    </article>\
+                                ").appendTo(".API2"); //Permet d'intégrer à l'intérieur de la div crée
+            });
         })
 
     //Ce code sera exécuté en cas d'échec - L'erreur est passée à fail()
@@ -29,3 +41,19 @@ $(document).ready(function() {
         alert("Requête effectuée.... Veuillez Patienter un instant");
     });
 });
+
+/*response.forEach(element => {
+                const paragraph = document.createElement('p');
+                const paragraph2 = document.createElement('p');
+                const image = document.createElement('img');
+
+                paragraph.innerHTML = element.nickname;
+                paragraph2.innerHTML = element.name;
+                image.innerHTML = element.img;
+                $('img').attr('src', "element.img");
+
+                paragraph.style = 'color: red'
+
+                content.appendChild(paragraph);
+                content.appendChild(paragraph2);
+                content.appendChild(image);*/
