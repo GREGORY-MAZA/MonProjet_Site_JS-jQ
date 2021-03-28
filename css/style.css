@@ -1,18 +1,22 @@
 body {
     background-color: black;
     color: whitesmoke;
-    margin: auto;
+    margin: 0;
 }
 
 header {
-    background-color: rgb(231, 197, 2);
+    background-color: white;
     color: black;
+    background: url(../images/breakingBad.jpg);
+    background-size: 100%;
+    height: 800px;
 }
 
 nav a {
-    color: white;
+    color: black;
     text-align: center;
     display: flex;
+    color: whitesmoke;
 }
 
 img {
@@ -29,7 +33,9 @@ p {
 
 h1 {
     text-align: right;
-    padding-right: 50px;
     font-size: 5em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: whitesmoke;
+    margin-top: 0px;
+    margin-bottom: 0;
 }

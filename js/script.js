@@ -13,10 +13,6 @@ $(document).ready(function() {
         /*On peut par exemple convertir cette réponse en chaine JSON et insérer
          * cette chaine dans un div id="res"*/
         .done(function(response) {
-            /*let data = JSON.stringify(response[1]);
-            /*$("div#API").append(data);*/
-            /*console.log(data);*/
-            console.log(response[0]);
             const content = document.createElement('div');
             response.forEach(element => {
 
