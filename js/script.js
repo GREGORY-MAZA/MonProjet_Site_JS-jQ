@@ -55,4 +55,7 @@ $(document).ready(function() {
     .always(function() {
         alert("Requête effectuée.... Veuillez Patienter un instant");
     });
+    
 });
+
+
