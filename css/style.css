@@ -9,14 +9,22 @@ header {
     color: black;
     background: url(../images/breakingBad.jpg);
     background-size: 100%;
-    height: 800px;
+    height: 400px;
+    padding-bottom: 100px;
+
+    
+    
 }
 
 nav a {
     color: black;
-    text-align: center;
-    display: flex;
     color: whitesmoke;
+    display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  align-content: normal;
 }
 
 img {
@@ -25,17 +33,54 @@ img {
 }
 
 p {
-    background-color: rgb(231, 197, 2);
+    
     font-size: x-large;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    padding-left: 50px;
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0px;
+    text-align: center;
 }
 
 h1 {
-    text-align: right;
-    font-size: 5em;
+    text-align: center;
+    display: flex;
+
+    font-size: 1em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: whitesmoke;
     margin-top: 0px;
     margin-bottom: 0;
 }
+
+.API2 div {
+    
+    width: 300px;
+    height: 500px;
+    background-color: rgba(29, 29, 29, 1);
+    
+    
+}
+
+div {
+    
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2em;
+    margin-left: 2em;
+    justify-content: space-around;
+    margin: 2em;
+}
+
+/*.flex-container {
+    
+  }
+  
+  .flex-items:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }*/
