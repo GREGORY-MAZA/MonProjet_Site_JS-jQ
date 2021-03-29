@@ -13,16 +13,35 @@ $(document).ready(function() {
         /*On peut par exemple convertir cette réponse en chaine JSON et insérer
          * cette chaine dans un div id="res"*/
         .done(function(response) {
+            //Déclaration d'une const du nom de content pour y mettre une DIV vierge
             const content = document.createElement('div');
-            response.forEach(element => {
-
-                //SELECTEUR des éléments
-                $("<article>\
-                        <p>" + element.nickname + "</p>\
-                        <p>" + element.name + "</p>\
-                        <img src='" + element.img + "'>\
-                    </article>\
-                                ").appendTo(".API2"); //Permet d'intégrer à l'intérieur de la div crée
+            console.log(response);
+                    response.forEach(element => {
+                        const content = document.createElement('div');
+                        //création des balises paragraph et img
+                        const paragraph = document.createElement('p');
+                        const paragraph2 = document.createElement('p');
+                        //const paragraph3 = document.createElement('p');
+                        const image = document.createElement('img');
+                                    
+                        //injecter les données de l'API dans les balises 
+                        paragraph.innerHTML = /*"<p>Pseudo : </p>" + */element.nickname;
+                        paragraph2.innerHTML = /*"<p>name </p>" + */element.name;
+                        //paragraph3.innerHTML = /*"<p>Birthday </p>" + */element.birthday;
+                        image.src = element.img;
+                                    
+                        /*paragraph.style = 'color: red'*/ // ajouter du style CSS
+                        paragraph.style = 'font-size: 1em';
+                        
+                        //Content = DIV (pour l'exemple et appenchild va mettre les balise injecté des données de l'api
+                        content.appendChild(paragraph);
+                        content.appendChild(paragraph2);
+                        //content.appendChild(paragraph3);
+                        content.appendChild(image);
+                        //Modifier le DOM ( document)  querySelector est le selecteur de la balise "API2"
+                        const API2 = document.querySelector(".API2")
+                        console.log(API2);
+                        API2.appendChild(content);
             });
         })
 
@@ -37,19 +56,3 @@ $(document).ready(function() {
         alert("Requête effectuée.... Veuillez Patienter un instant");
     });
 });
-
-/*response.forEach(element => {
-                const paragraph = document.createElement('p');
-                const paragraph2 = document.createElement('p');
-                const image = document.createElement('img');
-
-                paragraph.innerHTML = element.nickname;
-                paragraph2.innerHTML = element.name;
-                image.innerHTML = element.img;
-                $('img').attr('src', "element.img");
-
-                paragraph.style = 'color: red'
-
-                content.appendChild(paragraph);
-                content.appendChild(paragraph2);
-                content.appendChild(image);*/
