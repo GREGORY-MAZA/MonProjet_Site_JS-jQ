@@ -72,6 +72,7 @@ div {
     margin: 2em;
 }
 
+
 /*.flex-container {
     
   }
@@ -88,3 +89,7 @@ div {
   .fotorama {
     margin: 0px;
   }
+
+#menudiv {
+    margin: 0px;
+}
