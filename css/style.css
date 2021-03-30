@@ -66,20 +66,6 @@ div {
     margin: 2em;
 }
 
-
-/*.flex-container {
-    
-  }
-  
-  .flex-items:nth-child(1) {
-    display: block;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: auto;
-    order: 0;
-  }*/
-
 .fotorama {
     margin: 0px;
 }
@@ -145,4 +131,20 @@ div {
 
 .show {
     display: block;
+}
+
+.divForm {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    background-image: url(../images/footer.jpg);
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-repeat: no-repeat;
+    min-height: 800px;
+    opacity: 0.8;
 }

@@ -27,7 +27,7 @@ basculer entre masquer et afficher le contenu de la liste déroulante  */
         .done(function(response) {
             //Déclaration d'une const du nom de content pour y mettre une DIV vierge
             const content = document.createElement('div');
-            console.log(response);
+            //console.log(response);
             response.forEach(element => {
                 const content = document.createElement('div');
                 //création des balises paragraph et img
@@ -52,7 +52,7 @@ basculer entre masquer et afficher le contenu de la liste déroulante  */
                 content.appendChild(image);
                 //Modifier le DOM ( document)  querySelector est le selecteur de la balise "API2"
                 const API2 = document.querySelector(".API2")
-                console.log(API2);
+                    //console.log(API2);
                 API2.appendChild(content);
             });
         })
@@ -65,10 +65,16 @@ basculer entre masquer et afficher le contenu de la liste déroulante  */
 
     //Ce code sera exécuté que la requête soit un succès ou un échec
     .always(function() {
-        alert("Requête effectuée.... Veuillez Patienter un instant");
+        //alert("Requête effectuée.... Veuillez Patienter un instant");
     });
 
+    function afficher() {
+        console.log(document.querySelector('#Avis').value);
+    }
 
+    document.querySelector('#myButton').addEventListener('click', function() {
+        afficher();
+    })
 
 
 });
