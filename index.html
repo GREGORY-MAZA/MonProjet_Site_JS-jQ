@@ -8,26 +8,35 @@
     <title>Projet Greg</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!--<script src="/js/jquery-3.6.0.min.js" defer></script>!-->
-    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
     <script src="js/script.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js" defer></script>
 </head>
 
 <header>
-    <!--<h1>BREAKING BAD</h1>!-->
+    <!--<h1>BREAKING BAD</h1>
     <div id=menudiv>
-         <ul id="menu">
+        <ul id="menu">
             <li><a href="index.html">Accueil</a></li>
-                <ul>
-                    <li>ASASASAS</li>
-                    <li>DADADADAD</li>
-                </ul>
+            <ul>
+                <li>ASASASAS</li>
+                <li>DADADADAD</li>
+            </ul>
             <li><a href="pages/gallery.html">Gallery</a></li>
             <li><a href="pages/games.html">Games</a></li>
         </ul>
-    </div>
+    </div>!-->
+    <h1> <br>BREAKING BAD</h1>
 </header>
+<div class="dropdown">
+    <button class="dropbtn">MENU</button>
+    <div id="myDropdown" class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="pages/gallery.html">Gallery</a>
+        <a href="pages/games.html">Games</a>
+    </div>
+</div>
 
 <body>
     <div class="fotorama">
@@ -37,12 +46,36 @@
         <img src="images/carousel4.jpg">
         <img src="images/carousel5.jpg">
         <img src="images/carousel6.jpg">
-      </div>
+    </div>
+
 
 
     <h1></h1>
-    <div class="API2"></div>
+    <article class="allCard">
+        <div class="API2"></div>
+    </article>
     <footer></footer>
+    <!--<script>
+        /* When the user clicks on the button, 
+                        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script> !-->
 </body>
 
 </html>

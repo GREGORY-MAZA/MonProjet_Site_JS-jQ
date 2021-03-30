@@ -9,22 +9,21 @@ header {
     color: black;
     background: url(../images/breakingBad.jpg);
     background-size: 100%;
-    height: 400px;
-    padding-bottom: 100px;
-
-    
-    
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-repeat: no-repeat;
 }
 
 nav a {
     color: black;
     color: whitesmoke;
     display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: flex-end;
-  align-content: normal;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    align-content: normal;
 }
 
 img {
@@ -33,37 +32,32 @@ img {
 }
 
 p {
-    
     font-size: x-large;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin: 0px;
     text-align: center;
 }
 
 h1 {
-    text-align: center;
-    display: flex;
-
-    font-size: 1em;
+    font-size: 13em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: whitesmoke;
-    margin-top: 0px;
-    margin-bottom: 0;
+    color: rgb(253, 237, 146);
 }
 
 .API2 div {
-    
     width: 300px;
     height: 500px;
-    background-color: rgba(29, 29, 29, 1);
-    
-    
+    background-color: rgba(29, 29, 29, 0.425);
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2em;
+    margin-left: 2em;
+    justify-content: space-around;
+    margin: 2em;
 }
 
 div {
-    
     display: flex;
     flex-wrap: wrap;
     margin-top: 2em;
@@ -86,10 +80,67 @@ div {
     order: 0;
   }*/
 
-  .fotorama {
+.fotorama {
     margin: 0px;
-  }
+}
 
 #menudiv {
     margin: 0px;
+}
+
+.API2 img:hover {
+    opacity: 1.0;
+}
+
+.API2 img {
+    opacity: 0.9;
+}
+
+.allCard {}
+
+.dropbtn {
+    background-color: #ffffff;
+    color: rgb(41, 41, 41);
+    padding: 16px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #ffffff;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 0px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin: 0px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
 }
