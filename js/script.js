@@ -6,7 +6,7 @@ basculer entre masquer et afficher le contenu de la liste déroulante  */
         document.getElementById("myDropdown").classList.toggle("show");
     }
 
-    //Ferme le dropdown Menu si l'utilisateur clique en dehors
+    //Ferme / Ouvre le dropdown Menu
     //document.getElementsByClassName("dropbtn").onclick(myFunction());
     $('.dropbtn').on("click", displayMenu);
 
