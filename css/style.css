@@ -68,6 +68,7 @@ div {
 
 .fotorama {
     margin: 0px;
+    background: linear-gradient(rgb(98, 203, 230), white);
 }
 
 #menudiv {
@@ -136,6 +137,9 @@ div {
 .divForm {
     display: flex;
     justify-content: center;
+    margin: 0px;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 20px;
 }
 
 footer {
@@ -147,4 +151,31 @@ footer {
     background-repeat: no-repeat;
     min-height: 800px;
     opacity: 0.8;
+}
+
+.REP {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 300px;
+    /*background: linear-gradient( white, rgb(136, 163, 185));*/
+    background-color: white;
+    margin: 0px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding-right: 50px;
+}
+
+.REP p {
+    margin: auto;
+    margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 0px;
+    background-color: rgb(255, 255, 255);
+    overflow-wrap: break-word;
+    border-radius: 10px;
+    max-width: 95%;
+    color: rgba(0, 0, 0, 0.877);
+    font-size: 30px;
 }
