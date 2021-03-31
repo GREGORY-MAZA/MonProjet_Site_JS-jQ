@@ -53,7 +53,7 @@ basculer entre masquer et afficher le contenu de la liste déroulante  */
                 //Modifier le DOM ( document)  querySelector est le selecteur de la balise "API2"
                 const API2 = document.querySelector(".API2")
                     //console.log(API2);
-                API2.appendChild(content);
+                API2.appendChild(content); //Injecter content dans la DIV API2
             });
         })
 
@@ -67,9 +67,16 @@ basculer entre masquer et afficher le contenu de la liste déroulante  */
     .always(function() {
         //alert("Requête effectuée.... Veuillez Patienter un instant");
     });
-
+    //Fonction pour récupérer la valeur de la réponse du formulaire
     function afficher() {
-        console.log(document.querySelector('#Avis').value);
+        console.log(document.querySelector('#Avis').value); // envoi dans la console la réponse entré dans le form
+        const ICI = document.querySelector('#Avis').value; //Déclaration d'une const qui à pour valeur la réponse du formulaire
+        const contentForm = document.createElement('div'); // Création d'une balise <div> 
+        const reponseForm = document.createElement('p'); // Création d'une balise <p>
+        reponseForm.textContent = ICI + " "; // Injecter la valeur de la réponse du form dans la balise <p>
+        contentForm.appendChild(reponseForm); //Injecter la balise <p> dans la <div>
+        const REP = document.querySelector(".REP"); // Modification du DOM
+        REP.appendChild(reponseForm); //injecter reponseForm dans la balise REP
     }
 
     document.querySelector('#myButton').addEventListener('click', function() {
