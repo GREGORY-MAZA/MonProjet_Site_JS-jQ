@@ -22,23 +22,23 @@ $(document).ready(function() {
 
     /* //////////////////////////////////////// MES FONCTIONS //////////////////////////////////////// */
 
-    function removeMe(classe) {
-        let remove = document.getElementsByClassName(classe);
-        remove.innerHTML = "";
+    function removeMe() {
+        $('.Gallery').empty();
+        addImgGallery();
     }
 
     /*_________________________________________________________________________________________________*/
 
-    function column() {
+    function column() { //Passer les images Gallery en Column
         imgGalleryColumn.style = 'flex-direction: column; align-content: center; margin: 10px';
         sizeImageColumn.style = 'width: 1200px; height: auto'
     }
     /*_________________________________________________________________________________________________*/
-    function row() {
+    function row() { //Passer les images Gallery en Row mosaïque
         imgGalleryRow.style = 'flex-direction: row;'
     }
     /*_________________________________________________________________________________________________*/
-    function addImage() {
+    function addImage() { //Fonction appeler lors du clic bouton  pour ajouter une image dans la Gallery
         console.log(document.querySelector('#addImageText').value);
         let myAddImage = (document.querySelector('#addImageText').value); // Select de la valeur entrée dans la zone de text pour la mettre dans let myAddImage
         let imageUrl = document.createElement('img'); // Création de la balise <img> placer dans let imageUrl
@@ -46,7 +46,7 @@ $(document).ready(function() {
         document.querySelector('.Gallery').appendChild(imageUrl); // Ajout de la balise img rempli dans la balise <div class=Gallery>    
     }
     /*_________________________________________________________________________________________________*/
-    function addImgGallery() {
+    function addImgGallery() { // Ajoute les images dans la page Gallery
         imgGallery.forEach(element => { //Pour chaque élément du tableau imgGallery
             const imageGallery = document.createElement('img'); //Création d'une balise img
             imageGallery.src = element; //Ajout de l'attribut src dans la balise img
@@ -66,10 +66,11 @@ $(document).ready(function() {
     //addImage();
     /* //////////////////////////////////////// MES EVENEMENTS //////////////////////////////////////// */
 
-    $('#myButtonColumn').click(event => { column(); })
-    $('#myButtonRow').click(event => { row(); })
-
+    $('#myButtonColumn').click(event => { column(); }) // lors du clic les images passe en Column
+    $('#myButtonRow').click(event => { row(); }) // lors du clic les images passe en Row Mosaïque
+        //lors du clic , ajoute l'image du lien mis dans la zone text
     document.querySelector('#myAddButtonImage').addEventListener('click', function() { addImage(); })
+    $('#myButtonDelete').click(event => { removeMe(); })
 
     $('.dropbtn').on("click", displayMenu);
 });
