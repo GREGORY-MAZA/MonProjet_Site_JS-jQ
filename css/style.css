@@ -184,3 +184,25 @@ footer {
     width: 800px;
     height: auto;
 }
+
+#myButtonRow {
+    background: url(../pages/logo/row.png);
+    width: 64px;
+    height: 64px;
+    border: 0px;
+    margin-right: 20px;
+}
+
+#myButtonColumn {
+    background: url(../pages/logo/column.png);
+    width: 64px;
+    height: 64px;
+    border: 0px;
+    margin-left: 20px;
+}
+
+.divButtonGallery {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
