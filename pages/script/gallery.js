@@ -39,5 +39,35 @@ basculer entre masquer et afficher le contenu de la liste déroulante  */
     }
     addImgGallery();
 
+    let ButtonRow = document.querySelector('#myButtonColumn');
+    let ButtonColumn = document.querySelector('#myButtonRow');
 
+    /*function color() {
+        ButtonRow.style = 'color: red';
+    }*/
+
+    let imgGalleryColumn = document.querySelector('.Gallery');
+    let imgGalleryRow = document.querySelector('.Gallery');
+    let sizeImageColumn = document.querySelectorAll('.Gallery img');
+
+
+
+    function column() {
+
+        imgGalleryColumn.style = 'flex-direction: column; align-content: center; margin: 10px';
+        sizeImageColumn.style = 'width: 1200px; height: auto'
+    }
+
+    function row() {
+        imgGalleryRow.style = 'flex-direction: row;'
+    }
+
+    $('#myButtonColumn').click(event => {
+        column();
+
+    })
+
+    $('#myButtonRow').click(event => {
+        row();
+    })
 });

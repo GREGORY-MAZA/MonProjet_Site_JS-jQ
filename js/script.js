@@ -100,8 +100,7 @@ basculer entre masquer et afficher le contenu de la liste déroulante  */
         imgGallery.forEach(element => { //Pour chaque élément du tableau imgGallery
             const contentGallery = document.createElement('div'); //Création d'une balise div
             const imageGallery = document.createElement('img'); //Création d'une balise img
-            imageGallery.src = element; //
-
+            imageGallery.src = element; // rajouter à la  balise img crée, l'attribut src 
         })
     }
 
