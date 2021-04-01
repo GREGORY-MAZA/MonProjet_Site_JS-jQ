@@ -206,3 +206,8 @@ footer {
     justify-content: center;
     margin-top: 100px;
 }
+
+.divAddImage {
+    display: flex;
+    justify-content: center;
+}
