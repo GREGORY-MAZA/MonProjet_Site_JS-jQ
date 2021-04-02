@@ -27,6 +27,11 @@ $(document).ready(function() {
         addImgGallery();
     }
 
+    function removeMe2() {
+        $('img[deletethat]').remove();
+        
+    }
+
     /*_________________________________________________________________________________________________*/
 
     function column() { //Passer les images Gallery en Column
@@ -42,6 +47,7 @@ $(document).ready(function() {
         console.log(document.querySelector('#addImageText').value);
         let myAddImage = (document.querySelector('#addImageText').value); // Select de la valeur entrée dans la zone de text pour la mettre dans let myAddImage
         let imageUrl = document.createElement('img'); // Création de la balise <img> placer dans let imageUrl
+        imageUrl.setAttribute('deletethat', 'oui');
         imageUrl.setAttribute('src', myAddImage); // Donne à la balise img l'attribut src et la valeur de myAddImage qui est la valeur rentré dans la zone de texte
         document.querySelector('.Gallery').appendChild(imageUrl); // Ajout de la balise img rempli dans la balise <div class=Gallery>    
     }
@@ -70,7 +76,7 @@ $(document).ready(function() {
     $('#myButtonRow').click(event => { row(); }) // lors du clic les images passe en Row Mosaïque
         //lors du clic , ajoute l'image du lien mis dans la zone text
     document.querySelector('#myAddButtonImage').addEventListener('click', function() { addImage(); })
-    $('#myButtonDelete').click(event => { removeMe(); })
+    $('#myButtonDelete').click(event => { removeMe2(); })
 
     $('.dropbtn').on("click", displayMenu);
 });
