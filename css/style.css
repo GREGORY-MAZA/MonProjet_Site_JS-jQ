@@ -1,213 +1,253 @@
-body {
-    background-color: black;
-    color: whitesmoke;
-    margin: 0;
-}
+    body {
+        background-color: black;
+        color: whitesmoke;
+        margin: 0;
+    }
+    
+    header {
+        background-color: white;
+        color: black;
+        background: url(../images/breakingBad.jpg);
+        background-size: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        background-repeat: no-repeat;
+        min-height: 500px;
+    }
+    
+    nav a {
+        color: black;
+        color: whitesmoke;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-end;
+        align-content: normal;
+    }
+    
+    img {
+        width: 300px;
+        height: auto;
+    }
+    
+    p {
+        font-size: x-large;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin: 0px;
+        text-align: center;
+    }
+    
+    h1 {
+        font-size: 13em;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: rgb(253, 237, 146);
+        margin-bottom: 0px;
+        
+    }
+    
+    .API2 div {
+        width: 300px;
+        height: 500px;
+        background-color: rgba(29, 29, 29, 0.425);
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2em;
+        margin-left: 2em;
+        justify-content: space-around;
+        margin: 2em;
+    }
+    
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2em;
+        margin-left: 2em;
+        justify-content: space-around;
+        margin: 2em;
+    }
+    
+    .fotorama {
+        margin: 0px;
+        background: linear-gradient(rgb(98, 203, 230), white);
+    }
+    
+    #menudiv {
+        margin: 0px;
+    }
+    
+    .API2 img:hover {
+        opacity: 1.0;
+    }
+    
+    .API2 img {
+        opacity: 0.9;
+    }
+    
+    .allCard {}
+    
+    .dropbtn {
+        background-color: #ffffff;
+        color: rgb(41, 41, 41);
+        padding: 16px;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    
+    .dropbtn:hover,
+    .dropbtn:focus {
+        background-color: #ffffff;
+    }
+    
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        margin: 0px;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        margin: 0px;
+        text-align: center;
+        font-size: large;
+    }
+    
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown a:hover {
+        background-color: #ddd;
+    }
+    
+    .show {
+        display: block;
+    }
+    
+    .divForm {
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+        background-color: rgb(255, 255, 255);
+        padding-bottom: 20px;
+    }
+    
+    footer {
+        background-image: url(../images/footer.jpg);
+        background-size: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        background-repeat: no-repeat;
+        min-height: 400px;
+        opacity: 0.8;
+    }
+    
+    .REP {
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+        height: 300px;
+        /*background: linear-gradient( white, rgb(136, 163, 185));*/
+        background-color: white;
+        margin: 0px;
+        justify-content: center;
+        flex-wrap: nowrap;
+        padding-right: 50px;
+    }
+    
+    .REP p {
+        margin: auto;
+        margin-right: 0;
+        margin-top: 10px;
+        margin-bottom: 0;
+        padding: 0px;
+        background-color: rgb(255, 255, 255);
+        overflow-wrap: break-word;
+        border-radius: 10px;
+        max-width: 95%;
+        color: rgba(0, 0, 0, 0.877);
+        font-size: 30px;
+    }
+    
+    .Gallery img {
+        width: 800px;
+        height: auto;
+        padding: 30px;
+    }
+    
+    #myButtonRow {
+        background: url(../pages/logo/row.png);
+        width: 64px;
+        height: 64px;
+        border: 0px;
+        margin-right: 20px;
+    }
+    
+    #myButtonColumn {
+        background: url(../pages/logo/column.png);
+        width: 64px;
+        height: 64px;
+        border: 0px;
+        margin-left: 20px;
+    }
+    
+    #myButtonDelete {
+        background: url(../pages/logo/delete.png);
+        width: 64px;
+        height: 64px;
+        border: 0px;
+        margin-left: 20px;
+    }
+    
+    .divButtonGallery {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+    }
+    
+    .divAddImage {
+        display: flex;
+        justify-content: center;
+    }
 
-header {
-    background-color: white;
-    color: black;
-    background: url(../images/breakingBad.jpg);
-    background-size: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    background-repeat: no-repeat;
-}
+    #pierre {
+        background: url(../images/pierre.jpg);
+        width: 330px;
+        height: 330px;
+        border: 0px;
+        margin-right: 20px;
+    }
 
-nav a {
-    color: black;
-    color: whitesmoke;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: flex-end;
-    align-content: normal;
-}
+    #feuille {
+        background: url(../images/feuille.jpg);
+        width: 330px;
+        height: 330px;
+        border: 0px;
+        margin-right: 20px;
+    }
 
-img {
-    width: 300px;
-    height: auto;
-}
+    #ciseau {
+        background: url(../images/ciseau.jpg);
+        width: 330px;
+        height: 330px;
+        border: 0px;
+        margin-right: 20px;
+    }
 
-p {
-    font-size: x-large;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin: 0px;
-    text-align: center;
-}
-
-h1 {
-    font-size: 13em;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgb(253, 237, 146);
-}
-
-.API2 div {
-    width: 300px;
-    height: 500px;
-    background-color: rgba(29, 29, 29, 0.425);
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 2em;
-    margin-left: 2em;
-    justify-content: space-around;
-    margin: 2em;
-}
-
-div {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 2em;
-    margin-left: 2em;
-    justify-content: space-around;
-    margin: 2em;
-}
-
-.fotorama {
-    margin: 0px;
-    background: linear-gradient(rgb(98, 203, 230), white);
-}
-
-#menudiv {
-    margin: 0px;
-}
-
-.API2 img:hover {
-    opacity: 1.0;
-}
-
-.API2 img {
-    opacity: 0.9;
-}
-
-.allCard {}
-
-.dropbtn {
-    background-color: #ffffff;
-    color: rgb(41, 41, 41);
-    padding: 16px;
-    font-size: 18px;
-    border: none;
-    cursor: pointer;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-.dropbtn:hover,
-.dropbtn:focus {
-    background-color: #ffffff;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-    margin: 0px;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    margin: 0px;
-    text-align: center;
-    font-size: large;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown a:hover {
-    background-color: #ddd;
-}
-
-.show {
-    display: block;
-}
-
-.divForm {
-    display: flex;
-    justify-content: center;
-    margin: 0px;
-    background-color: rgb(255, 255, 255);
-    padding-bottom: 20px;
-}
-
-footer {
-    background-image: url(../images/footer.jpg);
-    background-size: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    background-repeat: no-repeat;
-    min-height: 800px;
-    opacity: 0.8;
-}
-
-.REP {
-    display: flex;
-    flex-direction: column;
-    overflow-y: scroll;
-    height: 300px;
-    /*background: linear-gradient( white, rgb(136, 163, 185));*/
-    background-color: white;
-    margin: 0px;
-    justify-content: center;
-    flex-wrap: nowrap;
-    padding-right: 50px;
-}
-
-.REP p {
-    margin: auto;
-    margin-right: 0;
-    margin-top: 10px;
-    margin-bottom: 0;
-    padding: 0px;
-    background-color: rgb(255, 255, 255);
-    overflow-wrap: break-word;
-    border-radius: 10px;
-    max-width: 95%;
-    color: rgba(0, 0, 0, 0.877);
-    font-size: 30px;
-}
-
-.Gallery img {
-    width: 800px;
-    height: auto;
-}
-
-#myButtonRow {
-    background: url(../pages/logo/row.png);
-    width: 64px;
-    height: 64px;
-    border: 0px;
-    margin-right: 20px;
-}
-
-#myButtonColumn {
-    background: url(../pages/logo/column.png);
-    width: 64px;
-    height: 64px;
-    border: 0px;
-    margin-left: 20px;
-}
-
-.divButtonGallery {
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-}
-
-.divAddImage {
-    display: flex;
-    justify-content: center;
-}
+    .ChoicePlayer {
+        margin-bottom: 200px;
+    }

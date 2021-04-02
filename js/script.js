@@ -10,6 +10,8 @@ basculer entre masquer et afficher le contenu de la liste déroulante  */
     //document.getElementsByClassName("dropbtn").onclick(myFunction());
     $('.dropbtn').on("click", displayMenu);
 
+    //Modifier le DOM ( document)  querySelector est le selecteur de la balise "API2"
+    const API2 = document.querySelector(".API2");
 
     $.ajax({
             //L'URL de la requête 
@@ -50,8 +52,7 @@ basculer entre masquer et afficher le contenu de la liste déroulante  */
                 content.appendChild(paragraph2);
                 //content.appendChild(paragraph3);
                 content.appendChild(image);
-                //Modifier le DOM ( document)  querySelector est le selecteur de la balise "API2"
-                const API2 = document.querySelector(".API2");
+                
                 //console.log(API2);
                 API2.appendChild(content); //Injecter content dans la DIV API2
             });
